@@ -485,7 +485,7 @@ public class MyThemeFragment extends ThemeFragment {
         } else {
             final Context context = getActivity();
             wp = context == null ? null :
-                    WallpaperManager.getInstance(context).getFastDrawable(WallpaperManager.FLAG_LOCK);
+                    WallpaperManager.getInstance(context).getFastKeyguardDrawable();
         }
         if (wp != null) {
             mLockScreenCard.setWallpaper(wp);
